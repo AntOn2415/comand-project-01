@@ -1,0 +1,40 @@
+// блок посилань на соцмережи
+.social-links {
+  @include centeringFlex();
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.social-links__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-links__link {
+  @include centeringFlex();
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  color: $color-icon;
+  fill: currentColor;
+
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    color: $color-white;
+  }
+}
+
+.social-links__icon {
+  width: 20px;
+  height: 20px;
+}
+
+// соціальні посилання у футері
+.social-links__link--bacground-color {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $color-white;
+}

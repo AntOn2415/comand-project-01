@@ -1,2 +1,13 @@
 @import './common';
 @import './example';
+// шрифти
+@import "./fonts/fonts";
+
+// змінні
+@import "./utils/index";
+
+// база
+@import "./base/index";
+
+// компоненти
+@import "./components/index"
