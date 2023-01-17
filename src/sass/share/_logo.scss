@@ -1,0 +1,25 @@
+// logo
+.logo-link__accent {
+  color: $color-accent;
+}
+
+.logo-link {
+  margin-right: 93px;
+  color: $color-logo;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  text-decoration: none;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+// логотип у футері
+.logo-link--light {
+  margin: 0;
+  color: $color-logo-link--light;
+}

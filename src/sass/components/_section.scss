@@ -1,0 +1,46 @@
+/* section */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: $color-secondary;
+    font-weight: $font-weight-more;
+    font-size: 28px;
+    line-height: 1.179;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.2;
+    }
+  }
+
+  &__title--visually-hidden {
+    @extend %visually-hidden;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    text-align: center;
+
+    color: $color-secondary;
+    font-weight: $font-weight-more;
+    font-size: $font-size-less;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+  }
+
+  &__text {
+    font-size: $font-size-less;
+    line-height: 1.714;
+  }
+}

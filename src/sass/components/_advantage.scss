@@ -1,0 +1,41 @@
+// переваги студії
+
+.advantage__set {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.advantage__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    @include flex-basis(2, 30px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include flex-basis(4, 30px);
+  }
+}
+
+.advantage__subtitle {
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.thumb {
+  @include centeringFlex();
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $color-background-light;
+  border-radius: 4px;
+}

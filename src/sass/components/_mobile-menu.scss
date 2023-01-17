@@ -1,0 +1,153 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $color-background;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms $timing-function;
+
+  @media (max-width: 407px) {
+    padding: 34px 25px;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+// кнопка меню
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  @include centeringFlex();
+  min-height: 40px;
+  min-width: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  align-items: center;
+  margin-bottom: auto;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__item {
+    text-decoration: unset;
+    text-decoration-line: $color-accent;
+  }
+}
+
+// іконки
+.menu-icon {
+  fill: $fill-icon-dark;
+
+  transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
+}
+
+.mobile-nav__link {
+  padding: 0;
+  color: $color-secondary;
+  font-weight: $font-weight-less;
+  font-size: 40px;
+  line-height: 1.175;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+  &.current {
+    color: $color-accent;
+  }
+}
+
+// контакти
+.contact-mobile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  gap: 32px;
+}
+// Мейл. тел.
+
+.contact-mobile__link {
+  color: $color-primary;
+  font-weight: $font-weight-less;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+}
+
+.contact-mobile__link--color {
+  color: $color-accent;
+  font-size: 34px;
+  line-height: 1.176;
+
+  @media screen and (max-width: 346px) {
+    font-size: 30px;
+  }
+}
+
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  // .mobile-social__item
+  &__item {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__item:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  // .mobile-social__link
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+
+    color: $color-accent;
+
+    @media screen and (max-width: 439px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 376px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 343px) {
+      font-size: 12px;
+    }
+  }
+}

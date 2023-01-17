@@ -1,0 +1,45 @@
+// * Постійні кліенти *
+
+.clients__set {
+  @include centeringFlex();
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  height: 92px;
+  @include flex-basis(2, 30px);
+
+  @media screen and (min-width: $tablet) {
+    @include flex-basis(3, 30px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include flex-basis(6, 30px);
+  }
+}
+
+.clients__link {
+  @include centeringFlex();
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-icon;
+  border-radius: 4px;
+
+  transition: border-color 250ms $timing-function;
+
+  &:hover {
+    border-color: $color-accent;
+  }
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: $color-icon;
+
+  transition: fill 250ms $timing-function;
+  .clients__link:hover & {
+    fill: $color-accent;
+  }
+}
