@@ -18,7 +18,9 @@
     "url": "https://github.com/AntOn2415/comand-project-01/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "aos": "^2.3.4",
+    "modern-normalize": "^1.1.0",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
