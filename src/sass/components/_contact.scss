@@ -37,7 +37,7 @@
 .contact__link {
   display: flex;
   color: $color-primary;
-  font-weight: $font-weight-less;
+  font-weight: $font-weight-secondary;
   font-size: 34px;
   line-height: 1.176;
   fill: currentColor;
@@ -53,7 +53,7 @@
   @media screen and (min-width: $desktop) {
     padding: 32px 0;
     gap: 10px;
-    font-size: $font-size-less;
+    font-size: $font-size-secondary;
     line-height: 1.143;
   }
 

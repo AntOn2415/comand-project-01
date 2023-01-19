@@ -47,7 +47,7 @@
 
   &__subtitle {
     color: $color-secondary;
-    font-weight: $font-weight-more;
+    font-weight: $font-weight-primary;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -57,7 +57,7 @@
   &__desc {
     margin-top: 4px;
     color: $color-primary;
-    font-size: $font-size-more;
+    font-size: $font-size-primary;
     line-height: 1.875;
     letter-spacing: 0.03em;
   }
