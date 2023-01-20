@@ -8,8 +8,8 @@
   cursor: pointer;
   border-radius: 4px;
   font-family: inherit;
-  font-weight: $font-weight-more;
-  font-size: $font-size-more;
+  font-weight: $font-weight-primary;
+  font-size: $font-size-primary;
   letter-spacing: 0.06em;
   color: $color-white;
   background-color: $color-accent;
@@ -65,7 +65,7 @@
   padding: 6px 22px;
   color: $color-secondary;
   background: $color-background-light;
-  font-weight: $font-weight-less;
+  font-weight: $font-weight-secondary;
   line-height: 1.625;
   letter-spacing: 0.03em;
   transition: color 250ms $timing-function,
