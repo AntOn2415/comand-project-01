@@ -4,12 +4,9 @@
 .header-line {
   position: relative;
   display: flex;
+  background-color: $color-background-header;
   @media screen and (max-width: 767px) {
     height: 60px;
   }
 }
-// лінія унизу хедера
-.top-line {
-  background-color: $top-line-bg;
-  border-bottom: 1px solid $color-header-border;
-}
+
