@@ -3,73 +3,104 @@
   display: flex;
   align-items: center;
 
+  &__grup {
+    display: flex;
+  align-items: center;
+  gap: 6px;
+   @media screen and (min-width: $tablet) {
+    gap: 32px;
+  }
+  }
+
   &__list {
     display: flex;
-    gap: 50px;
-
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-      gap: 32px;
-    }
+    gap: 26px;
+  @media screen and (min-width: $tablet) {
+    gap: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    
+  }
   }
 
   &__item {
     text-decoration: unset;
     text-decoration-line: $color-accent;
   }
-}
-
-.site-nav__link {
-  display: block;
-  padding: 28px 0 12px;
+  &__link {
   color: $color-accent;
-  font-weight: $font-weight-secondary;
-  font-size: $font-size-tertiary;
-  line-height: 1.2;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   transition: color 250ms $timing-function;
-  background-color: aqua;
 
-  &:hover,
-  &:focus {
+  @media (max-width: 1023px) {
+    padding: 28px 0 12px;
+  }
+  @media (min-width: 1024px) {
+   padding: 36px 0;
+    font-size: 20px;
+line-height: 24px;
+  }
+
+    &:hover,
+    &:focus {
     color: $color-brown;
   }
-  &.current {
+    &.current {
     color: $color-brown;
   }
-
 }
+&__icon {
+  background-color: yellow;
+  }
 
-.site-nav__contact {
+  &__contact {
   display: flex;
 
-  color: $color-white;
+  transition: color 250ms $timing-function;
+  @media (max-width: 1023px) {
+    padding: 24px 0 12px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 40px;
+    color: $color-white;
   font-size: $font-size-secondary;
   line-height: 1.214;
   fill: currentColor;
   letter-spacing: 0.02em;
-
-/* White */
-
-color: #FFFFFF;
-  transition: color 250ms $timing-function;
-
-  @media screen and (min-width: $tablet) {
-    padding: 0;
-    gap: 8px;
-    font-size: 12px;
-    line-height: 1.167;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 32px 0;
-    gap: 10px;
-    font-size: $font-size-secondary;
-    line-height: 1.143;
+    
   }
 
   &:hover,
   &:focus {
     color: $color-accent;
+  }
+}
+}
+
+
+.is-hiden-namber {
+  margin-left: 8px;
+   @media screen and (max-width: 1023px) {
+   position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
   }
 }

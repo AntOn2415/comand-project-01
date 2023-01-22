@@ -1,12 +1,14 @@
 // heder
-
+.header-top {
+ background-color: $color-background-header;
+}
 // контейнер для хедера
 .header-line {
-  position: relative;
   display: flex;
-  background-color: $color-background-header;
-  @media screen and (max-width: 767px) {
-    height: 60px;
+  align-items: center;
+  background-color: lightcoral;
+  @media screen and (min-width: 1024px) {
+    height: 100px;
   }
 }
 
