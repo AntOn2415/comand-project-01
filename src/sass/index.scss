@@ -6,4 +6,10 @@
 @import "./base/index";
 
 // компоненти
-@import "./components/index"
+@import "./components/index";
+
+@import "./sections/section_slider";
+@import './vars';
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import '../../node_modules/aos/dist/aos.css';
+

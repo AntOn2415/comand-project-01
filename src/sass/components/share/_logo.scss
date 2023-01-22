@@ -17,16 +17,16 @@
 }
 
 @media (max-width: 1023px) {
-  .logo-link-restaurant {
+  .logo-mobile-restaurant {
 color: #FDFBEC;
   }
 }
 
   @media screen and (min-width: $tablet) {
-    .logo-link-room {
+    .logo-tablet-room {
       color: #FFFDEE;
     }
-    .logo-link-hotel {
+    .logo-tablet-hotel {
       color: #F0ECD6;
     }
   }

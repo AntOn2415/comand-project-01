@@ -9,3 +9,194 @@
 @mixin flex-basis($column, $gap) {
   flex-basis: calc((100% - (($column - 1) * $gap)) / $column);
 }
+
+
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+// @mixin font($font_name, $file_name, $weight, $style) {
+//     @font-face {
+//         font-family: $font_name;
+//         font-display: swap;
+//         src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+//         url("../fonts/#{$file_name}.woff") format("woff");
+//         font-weight: #{$weight};
+//         font-style: #{$style};
+//     }
+// }
+
+$phoneMax: 480px;
+$phoneMin: 481px;
+//******/
+$tabletMax: 768px;
+$tabletMin: 769px;
+
+$desctopMax: 1199px;
+$desctopMin: 1200px;
+
+/**
+//* Mobile
+*/
+@mixin maxW-Phone {
+    @media screen and (max-width: $phoneMax) {
+        @content;
+    }
+}
+
+@mixin minW-Phone {
+    @media screen and (min-width: $phoneMin) {
+        @content;
+    }
+}
+
+/**
+//* Tablet
+*/
+
+@mixin maxW-Tablet {
+    @media screen and (max-width: $tabletMax) {
+        @content;
+    }
+}
+
+@mixin minW-Tablet {
+    @media screen and (min-width: $tabletMin) {
+        @content;
+    }
+}
+
+/**
+//* Desctop
+*/
+
+@mixin maxW-Dt {
+    @media screen and (max-width: $desctopMax) {
+        @content;
+    }
+}
+
+@mixin minW-Dt {
+    @media screen and (min-width: $desctopMin) {
+        @content;
+    }
+}
+
+// використання
+// зміна кольору коли екран більше 1200px
+// .test-class {
+//     color: #fff;
+
+//     @include minW-Dt {
+//         color: #000;
+//     }
+// }
+
+/////////////////////////////
+
+/**
+//* Castom media
+*/
+
+@mixin minW($widhtValue) {
+    @media screen and (min-width: $widhtValue) {
+        @content;
+    }
+}
+
+@mixin maxW($widhtValue) {
+    @media screen and (max-width: $widhtValue) {
+        @content;
+    }
+}
+
+// використання Castom media
+// .test-class {
+//     color: #fff;
+
+//     @include minW(1366px) {
+//         color: #000;
+//     }
+// }
+
+
+
+
+//  сітка на грідах
+@mixin gridBlock($cols, $gapRow, $gapCol) {
+
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+
+    @if ($gapCol) {
+        grid-gap: #{$gapRow + px} #{$gapCol + px};
+    }
+
+    @else {
+        grid-gap: #{$gapRow + px}
+    }
+}
+
+// використання gridBlock
+// .test-class {
+//  тут у нас сітка грідів в одну колонку , відступ буде 30px як по вертикалі так і горизонталі
+//     @include gridBlock(1, 30, false);
+
+// тут ми хочемо щоб на десктопі у нас була сітка в 4 колонки 
+// але відступ вже буде 30px та 40px по вертикалі і горизонталі
+//     @include minW-Dt {
+//         @include gridBlock(4, 30, 40);
+//     }
+// }
+
+/////////////////////////////
+/// 
+
+//* адаптивний шрифт
+// 
+$maxWidth: 1440; // ширина самого макету , не контейнеру ( десктоп)
+$minWidth: 375; // ширина самого макету , не контейнеру ( мобійл)
+
+@mixin adaptive-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - $minWidth;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth}));
+}
+
+// використання adaptive-font
+// де 42 це розмір шрифту на десктопі
+// де 18 це розмір шрифту на мобaйлі
+// .test-class {
+//     @include adaptive-font(42, 18);
+// }
+
+/////////////////////////////
+
+// більш складний міксин для адаптиву не в пікселях
+// можна використовувати як для розмірів так і для шрифту
+// $koef це коефіцієнт , який потрібно вираховувати
+// 960 це висота екрану в макеті, наприклад секція герой , його висота 960px
+// ширина макету 1440px , всього полотна
+// якщо ми зробимо екран в браузері розміром 1440*960 то розмір елементу ши розмір шрифту (що дає формула) співпаде з розміра які ми можемо вказати в пікселях
+
+$koef: calc(100vh / 960);
+
+@function customSize($px) {
+    $result: calc($koef * $px);
+    @return $result;
+}
+
+// як правило цей міксин підходить для адаптиву під 2к чи 4к монітори
+// .test-class {
+//     font-size: 18px;
+
+//     @include minW-Dt {
+//         font-size: customSize(30);
+//     }
+// }     
