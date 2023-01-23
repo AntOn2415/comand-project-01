@@ -11,20 +11,23 @@
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/example.html"></include>
     <include src="./partials/header.html"></include>
-    <include src="./components/button.html">
+
+
+    
+    <main>
+      <include src="./partials/hero.html"></include>
+          <include src="./components/button.html">
       {
     "text": "looks like it works"
   }
     </include>
-    
-    <main>
-      <include src="./partials/hero.html"></include>
       <include src="./partials/about-our-restaurant.html"></include>
       <include src="./partials/details-of-our-restaurant.html"></include>
       <include src="./partials/about-our-hotel.html"></include>
       <include src="./partials/details-of-our-hotel.html"></include>
       <include src="./partials/contacts.html"></include>
 
+      <!-- Приклад анимації -->
       <section class="section">
       <div class="container">
         <h2 data-aos="fade-up">Заголовок</h2>
@@ -53,7 +56,7 @@
     <script type="module" src="./index.js"></script>
 
     <script src="./js/vendors/swiper-bundle.min.js"></script>
-<script src="./js/vendors/aos.js"></script>
-<script src="./js/vendors/nice-select2.js"></script>    
+    <script src="./js/vendors/aos.js"></script>
+    <script src="./js/vendors/nice-select2.js"></script>    
   </body>
 </html>
