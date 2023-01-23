@@ -1,13 +1,13 @@
 // heder
 .header {
-  z-index: 1;
- background-color: $color-background-header;
+  position: sticky;
+  z-index: 999;
+ background-color: transparent;
 }
 // контейнер для хедера
 .header-line {
   display: flex;
   align-items: center;
-  background-color: lightcoral;
   @media screen and (min-width: 1024px) {
     height: 100px;
   }
