@@ -1,0 +1,70 @@
+// для прикладу
+
+.slider-section {
+    margin: 200px 0;
+    padding: 100px 0;
+    background-color: aqua;
+}
+
+.swiper {
+    max-height: 100%;
+
+    &-wrapper {
+        max-height: 100%;
+        height: 100%;
+    }
+
+    &-slide {
+
+
+        &.swiper-slide-active {
+            .swiper-inner {
+                transform: scale(1);
+            }
+
+        }
+
+        // &.swiper-slide-prev {
+
+        // }
+
+        // &.swiper-slide-next {
+
+        // }
+    }
+
+    &-inner {
+        max-height: 100%;
+        height: 300px;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 30px;
+        transform: scale(0.8);
+        transition: ease-in-out 0.4s;
+    }
+
+    // &-btns {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     gap: 50px;
+    // }
+
+    // &-btn{
+    //     position: relative;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     margin: 0;
+    //     transform: none;
+    // }
+    &-pagination {
+        &.swiper-pagination-bullets {
+            bottom: 0;
+        }
+
+    }
+}
