@@ -3,7 +3,7 @@
   @include centeringFlex();
   margin-left: 137px;
   gap: 20px;
-  @media screen and(max-width: $desktop) {
+  @media screen and(max-width: 1279px) {
     display: none;
   }
 }

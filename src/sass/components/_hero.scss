@@ -1,24 +1,23 @@
-// hero
+// hero перевірити
 .hero {
   text-align: center;
   margin: 0 auto;
   max-width: 1280px;
-  height: 720px;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  // height: 720px;
+  padding-top: 164px;
+  padding-bottom: 64px;
   background-color: $color-brand;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 0;
 
   transform: translateY(-100);
 
   // зображення для мобильного
   background-image: linear-gradient(
       to right,
-      $color-img-portfolio__overlay,
-      $color-img-portfolio__overlay
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
     ),
     url(../images/section-hero/hotel.jpeg);
 
@@ -32,7 +31,7 @@
   //       $color-img-portfolio__overlay
   //     ),
   //     url(../images/hero/bg-s@2x.jpg);
-  }
+  // }
 
   // @media screen and (min-width: 730px) {
   //   // зображення для планшету
@@ -81,26 +80,28 @@
   //   }
   // }
 
-//   &__title {
-//     margin: 0 auto;
-//     margin-bottom: 30px;
-//     text-transform: uppercase;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     color: $color-hero;
-//     font-weight: 900;
-//     font-size: 26px;
-//     line-height: 1.615;
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'FilmP3';
+font-style: normal;
+font-weight: 700;
+font-size: 128px;
+line-height: calc(138px / 128px);
+letter-spacing: 0.3em;
+color: $color-white;
 
-//     @media screen and (min-width: $tablet) {
-//       max-width: 360px;
-//     }
+    // @media screen and (min-width: $tablet) {
+    //   max-width: 360px;
+    // }
 
-//     @media screen and (min-width: $desktop) {
-//       width: $desktop;
-//       max-width: 696px;
-//       font-size: 44px;
-//       line-height: 1.364;
-//     }
-//   }
-// }
+    // @media screen and (min-width: $desktop) {
+    //   width: $desktop;
+    //   max-width: 696px;
+    //   font-size: 44px;
+    //   line-height: 1.364;
+    // }
+  }
+}
