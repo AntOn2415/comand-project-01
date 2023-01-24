@@ -1,9 +1,9 @@
 <!-- section menu -->
-<section class="restaurant-menu section">
-    <h2 class="restaurant-menu__title">МЕНЮ РЕСТОРАНУ </h2>
+<section class="restaurant-menu section"> 
     <div class="container">
-        <ul class="list">
-            <li>
+    <h2 class="restaurant-menu__title">МЕНЮ РЕСТОРАНУ </h2>    
+        <ul class="list restaurant-menu__type-dishes">
+            <li class="restaurant-menu__type-dish">
                 <h3 class="restaurant-menu__subtitle">Гарячі страви</h3>
                 <ul class="list">
                     <li>
@@ -54,7 +54,7 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li class="restaurant-menu__type-dish">
                 <h3 class="restaurant-menu__subtitle">Гарніри та закуски</h3>
                 <ul class="list">
                     <li>
@@ -104,7 +104,7 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li class="restaurant-menu__type-dish">
                 <h3 class="restaurant-menu__subtitle">Салати</h3>
                 <ul class="list">
                     <li>
@@ -145,7 +145,7 @@
                     </li>                    
                 </ul>
             </li>
-            <li>
+            <li class="restaurant-menu__type-dish">
                 <h3 class="restaurant-menu__subtitle">Десерти</h3>
                 <ul class="list">
                     <li>
@@ -158,7 +158,7 @@
                     </li>
                     <li>
                         <include src="./components/dish-template--one-row.html">{
-                            "title": "Торт наполеон",                            
+                            "title": "Торт маковий",                            
                             "weight": "230 г",
                             "price": "300 грн"
                         }
@@ -166,15 +166,15 @@
                     </li>
                     <li>
                         <include src="./components/dish-template--one-row.html">{
-                            "title": "Торт наполеон",                            
-                            "weight": "230 г",
-                            "price": "300 грн"
+                            "title": "Тірамісу",                            
+                            "weight": "120 г",
+                            "price": "260 грн"
                         }
                     </include>
                     </li>                    
                 </ul>
             </li>
-            <li>
+            <li class="restaurant-menu__type-dish">
                 <h3 class="restaurant-menu__subtitle">Напої</h3>
                 <ul class="list">                    
                     <li>
@@ -187,40 +187,40 @@
                     </li>
                     <li>
                         <include src="./components/dish-template--one-row.html">{
-                            "title": "Чай чорний/зелений",                            
-                            "weight": "500 г",
+                            "title": "Еспресо",                            
+                            "weight": "30 мл",
                             "price": "100 грн"
                         }
                     </include>
                     </li>
                     <li>
                         <include src="./components/dish-template--one-row.html">{
-                            "title": "Чай чорний/зелений",                            
-                            "weight": "500 г",
+                            "title": "Американо",                            
+                            "weight": "150 мл",
                             "price": "100 грн"
                         }
                     </include>
                     </li>
                     <li>
                         <include src="./components/dish-template--one-row.html">{
-                            "title": "Чай чорний/зелений",                            
-                            "weight": "500 г",
-                            "price": "100 грн"
+                            "title": "Капучино",                            
+                            "weight": "200 мл",
+                            "price": "160 грн"
                         }
                     </include>
                     </li>
                     <li>
                         <include src="./components/dish-template--one-row.html">{
-                            "title": "Чай чорний/зелений",                            
-                            "weight": "500 г",
-                            "price": "100 грн"
+                            "title": "Лате",                            
+                            "weight": "200 мл",
+                            "price": "160 грн"
                         }
                     </include>
                     </li>
                 </ul>
             </li>
         </ul>
-        Забронювати столик
+        <!-- Забронювати столик -->
         <include src="./components/button.html">{
             "text": "Забронювати столик"}
     </include>      
