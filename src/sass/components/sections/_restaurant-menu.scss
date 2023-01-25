@@ -34,15 +34,15 @@ th {
 
       @media (min-width: $tablet) {
         display: flex;
-    flex-wrap: wrap;
-    gap: 0 140px;
+        flex-wrap: wrap;
+        gap: 0 140px;
       }
   }
 
   &__type-dish {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     &:last-child {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
       @media (min-width: $tablet) {
         @include flex-basis(2, 140px);
@@ -63,7 +63,7 @@ th {
 .table-dish__title {
   // some code
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
@@ -74,7 +74,6 @@ th {
 
 .table-dish__ingredients {
   // some code
-  margin-bottom: 4px;
   display: inline-block;
   font-family: 'Montserrat';
   font-style: normal;
@@ -84,6 +83,7 @@ th {
   letter-spacing: 0.02em;
 
   color: #000000;
+
 }
 
 .table-dish__weight {
