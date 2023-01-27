@@ -5,16 +5,12 @@ table {
   font-family: 'Montserrat';
   font-style: normal;
 }
-// table,
-// td,
-// th {
-// // display: inline-flex;
-// border: salmon solid 2 px;
-// }
-// td,
-// th {
 
-// }
+td,
+th {
+  padding: 0;
+}
+
 th {
   background-color: transparent;
 }
@@ -35,15 +31,11 @@ th {
       @media (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
-        gap: 0 140px;
+        gap:  0 140px;
       }
   }
 
   &__type-dish {
-    margin-bottom: 16px;
-    &:last-child {
-      margin-bottom: 0;
-    }
       @media (min-width: $tablet) {
         @include flex-basis(2, 140px);
       }
@@ -60,7 +52,18 @@ th {
   }
 }
 
-.table-dish__title {
+.dishes-set-cover {
+  padding-bottom: 16px;
+}
+
+.dishes-set {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.table-dish {
+  &__title {
   // some code
   display: inline-block;
   margin-bottom: 4px;
@@ -71,8 +74,7 @@ th {
   color: #000000;
 
 }
-
-.table-dish__ingredients {
+&__ingredients {
   // some code
   display: inline-block;
   font-family: 'Montserrat';
@@ -81,12 +83,9 @@ th {
   font-size: 10px;
   line-height: calc(12 / 10);
   letter-spacing: 0.02em;
-
   color: #000000;
-
 }
-
-.table-dish__weight {
+&__weight {
   // some code
 width: 80px; 
   font-family: 'Montserrat';
@@ -95,15 +94,10 @@ width: 80px;
   font-size: 14px;
   line-height: calc(17 / 14);
   text-align: end;
-  /* identical to box height */
-
   letter-spacing: 0.02em;
-
-  /* Black */
-
   color: #000000;
 }
-.table-dish__price {
+&__price {
   // some code
 
   width: 80px; 
@@ -113,11 +107,19 @@ width: 80px;
   font-size: 14px;
   line-height: calc(17 / 14);
   text-align: end;
-  /* identical to box height */
-
   letter-spacing: 0.02em;
-
-  /* Black */
-
   color: #000000;
 }
+
+&__title--one-row {
+margin-bottom: 0;
+}
+
+}
+
+
+
+
+
+
+

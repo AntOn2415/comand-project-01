@@ -1,14 +1,13 @@
 <!-- section menu -->
 <section class="restaurant-menu section"> 
     <div class="container">
-    <h2 class="restaurant-menu__title">МЕНЮ РЕСТОРАНУ </h2>
-    <ul class="list restaurant-menu__type-dishes">
+    <h2 class="restaurant-menu__title">МЕНЮ РЕСТОРАНУ</h2>
+    <!-- <ul class="list restaurant-menu__type-dishes">
             <li class="restaurant-menu__type-dish">
-                <ul class="list">
-                     <li>
-                        <h3 class="restaurant-menu__subtitle">Гарячі страви</h3>
-                        <ul class="list">
-                            <li>
+                       <div class="dishes-set-cover">
+                         <h3 class="restaurant-menu__subtitle">Гарячі страви</h3>
+                        <ul class="list dishes-set">
+                            <li class="dish-card">
                                 <include src="./components/dish-template.html">{
                                     "title": "Борщ з телятини з квасолею ",
                                     "ingredients": "Телятина, картопля, капуста, морква, цибуля, квасоля, часник, помідори, зелень, сметана",
@@ -17,7 +16,7 @@
                                 }
                                 </include>
                             </li>
-                            <li>
+                            <li class="dish-card">
                                 <include src="./components/dish-template.html">{
                                     "title": "Суп сирний з куркою",
                                     "ingredients": "Курятина, картопля, морква, цибуля, печериці, сир м’який, зелень",
@@ -27,7 +26,7 @@
                                 }
                                 </include> 
                             </li>
-                            <li>
+                            <li class="dish-card">
                                 <include src="./components/dish-template.html">{
                                     "title": "Паста карбонара",
                                     "ingredients": "Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень",
@@ -36,7 +35,7 @@
                                 }
                                 </include> 
                             </li>
-                            <li>
+                            <li class="dish-card">
                                 <include src="./components/dish-template.html">{
                                     "title": "Стейк зі свинини",
                                     "ingredients": "Свиняча вирізка, спеціі, подається з соусом солодкий чилі та овочами",
@@ -45,7 +44,7 @@
                                 }
                                 </include>
                             </li>
-                            <li>
+                            <li class="dish-card">
                                 <include src="./components/dish-template.html">{
                                     "title": "Горбуша в соусі з білого вина",
                                     "ingredients": "Ніжна горбуша, вершковий соус на основі білого вина",
@@ -53,13 +52,13 @@
                                     "price": "400 грн"
                                 }
                                 </include> 
-                            </li>
-                        </ul>
-                    </li>
-            <li>
-                <h3 class="restaurant-menu__subtitle">Гарніри та закуски</h3>
-                <ul class="list">
-                    <li>
+                            </li>   
+                        </ul>     
+                       </div>         
+                <div class="dishes-set-cover">
+                    <h3 class="restaurant-menu__subtitle">Гарніри та закуски</h3>
+                <ul class="list dishes-set">
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Запечені овочі",
                             "ingredients": "Кабачок, перець, помідор, баклажан",
@@ -68,7 +67,7 @@
                         }
                         </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Картопля фрі",
                             "ingredients": "Картопля, соус томатний",
@@ -77,7 +76,7 @@
                         }
                         </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Картопля по-селянськи",
                             "ingredients": "Картопля, спеції, соус пікантний",
@@ -86,7 +85,7 @@
                             }
                         </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Хрумкі соління з бочки",
                             "ingredients": "Огірок солений, помідор квашений, квашена капуста, морква по-корейські",
@@ -95,7 +94,7 @@
                         }
                         </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Крильця курячі в медовому соусі",
                             "ingredients": "Крильця курячі, гірчично-медовий соус, подається з морквою, селерою і соусом блючиз",
@@ -104,16 +103,14 @@
                         }
                         </include>
                     </li>
-                </ul>
-            </li>
-                </ul>
+                </ul>    
+                </div>       
             </li>
             <li class="restaurant-menu__type-dish">
-                <ul class="list">
-                    <li class="restaurant-menu__type-dish">
-                <h3 class="restaurant-menu__subtitle">Салати</h3>
-                <ul class="list">
-                    <li>
+                        <div class="dishes-set-cover">
+                            <h3 class="restaurant-menu__subtitle">Салати</h3>
+                            <ul class="list dishes-set">
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Цезар з куркою",
                             "ingredients": "Куряче філе, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
@@ -122,7 +119,7 @@
                         }
                         </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Цезар з креветками",
                             "ingredients": "Тигрові креветки, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
@@ -131,7 +128,7 @@
                         }
                         </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "Грецький салат",
                             "ingredients": "Свіжі огірок, помідор, болгарський перець, оливки, сир бринза, листя салату, соус",
@@ -140,7 +137,7 @@
                         }
                         </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template.html">{
                             "title": "М’ясний салат",
                             "ingredients": "Куряче філе або свиняча вирізка, свіжі огірок, помідор, болгарський перець, соус ранч",
@@ -150,11 +147,13 @@
                         </include>
                     </li>                    
                 </ul>
+            </div>          
             </li>
             <li class="restaurant-menu__type-dish">
+                <div class="dishes-set-cover">
                 <h3 class="restaurant-menu__subtitle">Десерти</h3>
-                <ul class="list">
-                    <li>
+                <ul class="list dishes-set">
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Торт наполеон",                            
                             "weight": "230 г",
@@ -162,7 +161,7 @@
                         }
                     </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Торт маковий",                            
                             "weight": "230 г",
@@ -170,7 +169,7 @@
                         }
                     </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Тірамісу",                            
                             "weight": "120 г",
@@ -178,12 +177,15 @@
                         }
                     </include>
                     </li>                    
-                </ul>
+                </ul>    
+                </div>
+                
             </li>
             <li class="restaurant-menu__type-dish">
-                <h3 class="restaurant-menu__subtitle">Напої</h3>
-                <ul class="list">                    
-                    <li>
+                <div class="dishes-set-cover">
+                    <h3 class="restaurant-menu__subtitle">Напої</h3>
+                <ul class="list dishes-set">                    
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Чай чорний/зелений",                            
                             "weight": "500 г",
@@ -191,7 +193,7 @@
                         }
                     </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Еспресо",                            
                             "weight": "30 мл",
@@ -199,7 +201,7 @@
                         }
                     </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Американо",                            
                             "weight": "150 мл",
@@ -207,7 +209,7 @@
                         }
                     </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Капучино",                            
                             "weight": "200 мл",
@@ -215,7 +217,7 @@
                         }
                     </include>
                     </li>
-                    <li>
+                    <li class="dish-card">
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Лате",                            
                             "weight": "200 мл",
@@ -223,26 +225,24 @@
                         }
                     </include>
                     </li>
-                </ul>
+                </ul>    
+                </div> 
             </li>
-
-                </ul>
-            </li>
-            
         </ul>
-        <!-- Забронювати столик -->
+        
         <include src="./components/button.html">{
             "text": "Забронювати столик"}
-    </include>   
-    
-    
+    </include>    -->
 
 
 
-    <ul class="list restaurant-menu__type-dishes">
-            <li class="restaurant-menu__type-dish">
-                
-                        <h3 class="restaurant-menu__subtitle">Гарячі страви</h3>
+
+
+                <div class="dishes-set-cover">
+                         <h3 class="restaurant-menu__subtitle">Гарячі страви</h3>
+                         <table>
+                            <caption></caption>
+                         </table>
                                 <include src="./components/dish-template.html">{
                                     "title": "Борщ з телятини з квасолею ",
                                     "ingredients": "Телятина, картопля, капуста, морква, цибуля, квасоля, часник, помідори, зелень, сметана",
@@ -250,7 +250,7 @@
                                     "price": "240 грн"
                                 }
                                 </include>
-                         
+
                                 <include src="./components/dish-template.html">{
                                     "title": "Суп сирний з куркою",
                                     "ingredients": "Курятина, картопля, морква, цибуля, печериці, сир м’який, зелень",
@@ -259,7 +259,7 @@
                                     
                                 }
                                 </include> 
-                          
+
                                 <include src="./components/dish-template.html">{
                                     "title": "Паста карбонара",
                                     "ingredients": "Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень",
@@ -267,7 +267,7 @@
                                     "price": "430 грн"
                                 }
                                 </include> 
-            
+
                                 <include src="./components/dish-template.html">{
                                     "title": "Стейк зі свинини",
                                     "ingredients": "Свиняча вирізка, спеціі, подається з соусом солодкий чилі та овочами",
@@ -275,17 +275,18 @@
                                     "price": "500 грн"
                                 }
                                 </include>
-                     
+
                                 <include src="./components/dish-template.html">{
                                     "title": "Горбуша в соусі з білого вина",
                                     "ingredients": "Ніжна горбуша, вершковий соус на основі білого вина",
                                     "weight": "400 г",
                                     "price": "400 грн"
                                 }
-                                </include> 
-
-                <h3 class="restaurant-menu__subtitle">Гарніри та закуски</h3>
-                
+                                </include>   
+                </div>  
+                    
+                <div class="dishes-set-cover">
+                    <h3 class="restaurant-menu__subtitle">Гарніри та закуски</h3>
                         <include src="./components/dish-template.html">{
                             "title": "Запечені овочі",
                             "ingredients": "Кабачок, перець, помідор, баклажан",
@@ -293,6 +294,7 @@
                             "price": "230 грн"
                         }
                         </include>
+
                         <include src="./components/dish-template.html">{
                             "title": "Картопля фрі",
                             "ingredients": "Картопля, соус томатний",
@@ -300,6 +302,7 @@
                             "price": "160 грн"
                         }
                         </include>
+
                         <include src="./components/dish-template.html">{
                             "title": "Картопля по-селянськи",
                             "ingredients": "Картопля, спеції, соус пікантний",
@@ -307,6 +310,7 @@
                             "price": "160 грн"
                             }
                         </include>
+
                         <include src="./components/dish-template.html">{
                             "title": "Хрумкі соління з бочки",
                             "ingredients": "Огірок солений, помідор квашений, квашена капуста, морква по-корейські",
@@ -314,19 +318,25 @@
                             "price": "350 грн"
                         }
                         </include>
+
                         <include src="./components/dish-template.html">{
                             "title": "Крильця курячі в медовому соусі",
                             "ingredients": "Крильця курячі, гірчично-медовий соус, подається з морквою, селерою і соусом блючиз",
                             "weight": "400 г",
                             "price": "420 грн"
                         }
-                        </include>
-            </li>
-            <li class="restaurant-menu__type-dish">
-                <ul class="list">
-                    <li class="restaurant-menu__type-dish">
-                <h3 class="restaurant-menu__subtitle">Салати</h3>
-            
+                        </include> 
+                </div>  
+                        
+                <div class="dishes-set-cover">
+                            <h3 class="restaurant-menu__subtitle">Салати</h3>
+                            <table role="presentation">
+                            <caption>Салати</caption>
+                            <tbody>
+
+                            </tbody>    
+                            </table>
+                            
                         <include src="./components/dish-template.html">{
                             "title": "Цезар з куркою",
                             "ingredients": "Куряче філе, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
@@ -334,7 +344,7 @@
                             "price": "450 грн"
                         }
                         </include>
-           
+            
                         <include src="./components/dish-template.html">{
                             "title": "Цезар з креветками",
                             "ingredients": "Тигрові креветки, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
@@ -342,7 +352,7 @@
                             "price": "300 грн"
                         }
                         </include>
-             
+                        
                         <include src="./components/dish-template.html">{
                             "title": "Грецький салат",
                             "ingredients": "Свіжі огірок, помідор, болгарський перець, оливки, сир бринза, листя салату, соус",
@@ -350,7 +360,7 @@
                             "price": "280 грн"
                         }
                         </include>
-                
+                    
                         <include src="./components/dish-template.html">{
                             "title": "М’ясний салат",
                             "ingredients": "Куряче філе або свиняча вирізка, свіжі огірок, помідор, болгарський перець, соус ранч",
@@ -358,88 +368,72 @@
                             "price": "300 грн"
                         }
                         </include>
-                         
-                
-            </li>
-            <li class="restaurant-menu__type-dish">
+                </div>          
+
+                <div class="dishes-set-cover">
                 <h3 class="restaurant-menu__subtitle">Десерти</h3>
-                <ul class="list">
-                    <li>
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Торт наполеон",                            
                             "weight": "230 г",
                             "price": "300 грн"
                         }
                     </include>
-                    </li>
-                    <li>
+                    
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Торт маковий",                            
                             "weight": "230 г",
                             "price": "300 грн"
                         }
                     </include>
-                    </li>
-                    <li>
+
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Тірамісу",                            
                             "weight": "120 г",
                             "price": "260 грн"
                         }
                     </include>
-                    </li>                    
-                </ul>
-            </li>
-            <li class="restaurant-menu__type-dish">
-                <h3 class="restaurant-menu__subtitle">Напої</h3>
-                <ul class="list">                    
-                    <li>
+
+                </div>
+                
+
+                <div class="dishes-set-cover">
+                    <h3 class="restaurant-menu__subtitle">Напої</h3>
+
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Чай чорний/зелений",                            
                             "weight": "500 г",
                             "price": "100 грн"
                         }
                     </include>
-                    </li>
-                    <li>
+
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Еспресо",                            
                             "weight": "30 мл",
                             "price": "100 грн"
                         }
                     </include>
-                    </li>
-                    <li>
+
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Американо",                            
                             "weight": "150 мл",
                             "price": "100 грн"
                         }
                     </include>
-                    </li>
-                    <li>
+
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Капучино",                            
                             "weight": "200 мл",
                             "price": "160 грн"
                         }
                     </include>
-                    </li>
-                    <li>
+
                         <include src="./components/dish-template--one-row.html">{
                             "title": "Лате",                            
                             "weight": "200 мл",
                             "price": "160 грн"
                         }
                     </include>
-                    </li>
-                </ul>
-            </li>
+                </div> 
 
-                </ul>
-            </li>
-            
-        </ul>
-        <!-- some code -->
     </div>
 </section>
