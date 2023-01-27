@@ -1,96 +1,125 @@
-
 table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
 }
-table,
+
 td,
 th {
-  border: 1px solid #595959;
+  padding: 0;
 }
-td,
-th {
-  padding: 3px;
-  width: 30px;
-  height: 24px;
-}
+
 th {
   background-color: transparent;
 }
 
+.restaurant-menu {
+  padding: 32px 0;
+  &__title {
+    margin-bottom: 32px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    color: #000000;
+  }
 
-.restaurant-menu__subtitle {
+  &__type-dishes {
+
+      @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap:  0 140px;
+      }
+  }
+
+  &__type-dish {
+      @media (min-width: $tablet) {
+        @include flex-basis(2, 140px);
+      }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    /* identical to box height */
-
-
-    /* Black */
-
     color: #000000;
-
+  }
 }
-.dish__title {
+
+.dishes-set-cover {
+  padding-bottom: 16px;
+}
+
+.dishes-set {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.table-dish {
+  &__title {
   // some code
-  font-family: 'Montserrat';
-  font-style: normal;
+  display: inline-block;
+  margin-bottom: 4px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-
+  line-height: calc(17 / 14);
   letter-spacing: 0.02em;
-
-  /* Black */
-
   color: #000000;
+
 }
-.dish__ingredients {
+&__ingredients {
   // some code
+  display: inline-block;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
-  line-height: 12px;
+  line-height: calc(12 / 10);
   letter-spacing: 0.02em;
-
-  /* Black */
-
   color: #000000;
 }
-
-.dish__weight {
+&__weight {
   // some code
-
+width: 80px; 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-
+  line-height: calc(17 / 14);
+  text-align: end;
   letter-spacing: 0.02em;
-
-  /* Black */
-
   color: #000000;
 }
-.dish__price {
+&__price {
   // some code
+
+  width: 80px; 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-
+  line-height: calc(17 / 14);
+  text-align: end;
   letter-spacing: 0.02em;
-
-  /* Black */
-
   color: #000000;
 }
+
+&__title--one-row {
+margin-bottom: 0;
+}
+
+}
+
+
+
+
+
+
+
